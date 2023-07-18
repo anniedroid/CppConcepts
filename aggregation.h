@@ -18,10 +18,10 @@ public:
     int year_built;
     string location;
     CookTop* cook_top;
-    Kitchen(int year_built, string location, CookTop* cook_top) {
+    Kitchen(int year_built, string location, CookTop cook_top) {
         this->year_built = year_built;
         this->location = location;
-        this->cook_top = cook_top;
+        this->cook_top = &cook_top;
     }
     void display() {
         cout << "This kitchen was built in " << year_built << endl <<
