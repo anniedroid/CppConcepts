@@ -4,3 +4,6 @@
 * Aggregation
 * Composition
 * Complex Class
+* Copy Constructor
+* Friend Function
+* Destructor
