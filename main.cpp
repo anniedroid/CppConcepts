@@ -46,5 +46,8 @@ int main() {
     ConcertTicket taylor_swift_ticket;
     ConcertTicket EDM_ticket;
 
+    EDM_ticket.~ConcertTicket(); // Calling destructor explicitly
+    cout << "This is the end of my program\n";
+
     return 0;
 }
