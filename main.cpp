@@ -2,6 +2,7 @@
 #include "diamond.h"
 #include "aggregation.h"
 #include "composition.h"
+#include "static-field.h"
 
 using namespace std;
 
@@ -27,6 +28,11 @@ int main() {
     Marriage marriage(&bride, &groom);
     marriage.display();
 
+    // Static field
+    HP_Book book1("Harry Potter & the Sorcerer's Stone", 1997);
+    HP_Book book2("Harry Potter & the Chamber of Secret", 1998);
+    book1.display();
+    book2.display();
 
     return 0;
 }
