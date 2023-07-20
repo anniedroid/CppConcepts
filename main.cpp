@@ -2,9 +2,6 @@
 #include "diamond.h"
 #include "aggregation.h"
 #include "composition.h"
-#include "copy-constructors.h"
-#include "friend-function.h"
-#include "destructor.h"
 
 using namespace std;
 
@@ -30,21 +27,6 @@ int main() {
     Marriage marriage(&bride, &groom);
     marriage.display();
 
-    // Copy constructor
-    Phone iphone14(6.07, 6.1, 128);
-    Phone another_iphone14 = iphone14;
-    iphone14.display();
-    another_iphone14.display();
-
-    // Friend function
-    Investment my_invesment(1000);
-    my_invesment.display();
-    calculateInterest(my_invesment, 0.1, 1);
-    my_invesment.display();
-
-    // Destructor
-    ConcertTicket taylor_swift_ticket;
-    ConcertTicket EDM_ticket;
 
     return 0;
 }
