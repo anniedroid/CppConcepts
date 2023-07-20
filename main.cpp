@@ -28,5 +28,8 @@ int main() {
     marriage.display();
 
 
+    EDM_ticket.~ConcertTicket(); // Calling destructor explicitly
+    cout << "This is the end of my program\n";
+
     return 0;
 }
