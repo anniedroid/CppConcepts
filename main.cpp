@@ -1,7 +1,10 @@
+#include <iomanip>
 #include "constructors-call.h"
 #include "diamond.h"
 #include "aggregation.h"
 #include "composition.h"
+#include "abstraction.h"
+#include "shallow-deep-copy.h"
 
 using namespace std;
 
@@ -27,6 +30,19 @@ int main() {
     Marriage marriage(&bride, &groom);
     marriage.display();
 
+    // Abstraction
+    Salary my_salary(456789.50);
+    Wages her_wages(25.25);
+
+    cout << "My annual income is: $" << fixed << setprecision(2) << my_salary.total() << endl;
+    cout << "My annual income is: $" << fixed << setprecision(2) << her_wages.total() << endl;
+
+    // Deep Copies
+    Cake my_cake("Red Velvet", "Cream cheese", "Chocolate");
+    Cake deep_cake(my_cake);
+    deep_cake.icing = "Vanilla";
+    my_cake.display();
+    deep_cake.display();
 
     return 0;
 }
