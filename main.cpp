@@ -33,6 +33,7 @@ int main() {
     HP_Book book2("Harry Potter & the Chamber of Secret", 1998);
     book1.display();
     book2.display();
+    HP_Book::authorIntro();
 
     return 0;
 }

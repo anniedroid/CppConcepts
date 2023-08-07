@@ -19,8 +19,12 @@ public:
     void display() {
         cout << "Tittle: " << title << " - " << year << " by " << author << endl;
     }
+
+    static void authorIntro() {
+        cout << "J.K. Rowling wrote all Harry Potter books!\n";
+    }
 };
 
-string HP_Book::author  = "J.K Rowling";
+string HP_Book::author  = "J.K. Rowling";
 
 #endif
